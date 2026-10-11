@@ -1,0 +1,12 @@
+Command (requires a registered demo user and a running backend on localhost:8000):
+curl -i -X POST http://localhost:8000/api/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"alex.morgan@example.com","password":"DemoPass123!"}'
+
+Illustrative expected response (actual output depends on your backend):
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"message":"Login successful","token":"<example-token>","user":{"name":"Alex Morgan","email":"alex.morgan@example.com"}}
+
+Note: This is an example response, not a verified live API result. Do not use real patient credentials.

@@ -1,0 +1,15 @@
+Production build evidence template
+==================================
+Run from the project root:
+  npm install
+  npm run build
+
+Expected Vite output (exact filenames/sizes vary by dependency versions):
+  vite vX.X.X building for production...
+  ✓ N modules transformed.
+  dist/index.html                  ... kB
+  dist/assets/index-<hash>.css     ... kB
+  dist/assets/index-<hash>.js      ... kB
+  ✓ built in ...s
+
+This file is a command/output template, not a captured build log. Run the command locally to generate authentic evidence.
